@@ -1,0 +1,17 @@
+<div class="header-container">
+  <div style="margin-left: 12px;">
+      <mat-form-field>
+          <mat-label>Product Name</mat-label>
+          <input matInput [(ngModel)]="Search" (ngModelChange)="onChange()" placeholder="Search">
+      </mat-form-field>
+  </div>
+  <div style="margin-right: 12px; margin-top: 8px;">
+      <button mat-button (click)="openAddProduct()">Add Product</button>
+  </div>
+</div>
+<div style="margin-top: 12px;">
+  <div class="table-heading">Products List</div>
+  <div class="table-container">
+      <app-list-products [searchstring]="Search" (editItem)="edit($event)"></app-list-products>
+  </div>
+</div>

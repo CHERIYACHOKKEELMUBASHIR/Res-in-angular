@@ -1,0 +1,142 @@
+<!-- <mat-card class="example-card">
+    <mat-card-header>
+      <div mat-card-avatar class="example-header-image"></div>
+      <mat-card-title>Shiba Inu</mat-card-title>
+      <mat-card-subtitle>Dog Breed</mat-card-subtitle>
+    </mat-card-header>
+    <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
+    <mat-card-content>
+      <p>
+        The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.
+        A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally
+        bred for hunting.
+      </p>
+    </mat-card-content>
+    <mat-card-actions>
+      <button mat-button>LIKE</button>
+      <button mat-button>SHARE</button>
+    </mat-card-actions>
+  </mat-card> -->
+<!--   
+  <mat-grid-list cols="2" rowHeight="450px">
+    <ng-container *ngFor="let fooditem of fooditem" >
+    <mat-grid-tile>
+        <mat-card class="example-card">
+            <mat-card-header>
+    
+    <div mat-card-avatar class="example-header-image" style="background-image: url('https://healux.in/wp-content/uploads/2020/11/ChickenBiryani.jpg');"></div>
+              <mat-card-title>{{fooditem.name}}</mat-card-title>
+              <mat-card-subtitle>Biriyani</mat-card-subtitle>
+            </mat-card-header>
+            <img mat-card-image src="https://img.onmanorama.com/content/dam/mm/en/food/in-season/Ramzan/Images/hyderabadi-dum-biryani.jpg" alt="Photo of a Biriyani">
+            <mat-card-content>
+              <p>
+                Biryani is a mixed rice dish originating among the Muslims of the Indian subcontinent.
+                 It is made with Indian spices, rice, and usually 
+                some type of meat or in some cases without any meat, and sometimes, in addition, eggs and potatoes
+              </p>
+            </mat-card-content>
+            <mat-card-actions>
+              <button mat-button>LIKE</button>
+              <button mat-button>SHARE</button>
+            </mat-card-actions>
+          </mat-card>
+    </mat-grid-tile>
+  </ng-container> -->
+    <!-- <mat-grid-tile>
+        <mat-card class="example-card">
+            <mat-card-header>
+    
+    <div mat-card-avatar class="example-header-image" style="background-image: url('https://healux.in/wp-content/uploads/2020/11/ChickenBiryani.jpg');"></div>
+              <mat-card-title>MVK</mat-card-title>
+              <mat-card-subtitle>Biriyani</mat-card-subtitle>
+            </mat-card-header>
+            <img mat-card-image src="https://img.onmanorama.com/content/dam/mm/en/food/in-season/Ramzan/Images/hyderabadi-dum-biryani.jpg" alt="Photo of a Biriyani">
+            <mat-card-content>
+              <p>
+                Biryani is a mixed rice dish originating among the Muslims of the Indian subcontinent.
+                 It is made with Indian spices, rice, and usually 
+                some type of meat or in some cases without any meat, and sometimes, in addition, eggs and potatoes
+              </p>
+            </mat-card-content>
+            <mat-card-actions>
+              <button mat-button>LIKE</button>
+              <button mat-button>SHARE</button>
+            </mat-card-actions>
+          </mat-card>
+    </mat-grid-tile>
+    <mat-grid-tile>
+        <mat-card class="example-card">
+            <mat-card-header>
+    
+    <div mat-card-avatar class="example-header-image" style="background-image: url('https://healux.in/wp-content/uploads/2020/11/ChickenBiryani.jpg');"></div>
+              <mat-card-title>MVK</mat-card-title>
+              <mat-card-subtitle>Biriyani</mat-card-subtitle>
+            </mat-card-header>
+            <img mat-card-image src="https://img.onmanorama.com/content/dam/mm/en/food/in-season/Ramzan/Images/hyderabadi-dum-biryani.jpg" alt="Photo of a Biriyani">
+            <mat-card-content>
+              <p>
+                Biryani is a mixed rice dish originating among the Muslims of the Indian subcontinent.
+                 It is made with Indian spices, rice, and usually 
+                some type of meat or in some cases without any meat, and sometimes, in addition, eggs and potatoes
+              </p>
+            </mat-card-content>
+            <mat-card-actions>
+              <button mat-button>LIKE</button>
+              <button mat-button>SHARE</button>
+            </mat-card-actions>
+          </mat-card>
+    </mat-grid-tile>
+    <mat-grid-tile>
+        <mat-card class="example-card">
+            <mat-card-header>
+    
+    <div mat-card-avatar class="example-header-image" style="background-image: url('https://healux.in/wp-content/uploads/2020/11/ChickenBiryani.jpg');"></div>
+              <mat-card-title>MVK</mat-card-title>
+              <mat-card-subtitle>Biriyani</mat-card-subtitle>
+            </mat-card-header>
+            <img mat-card-image src="https://img.onmanorama.com/content/dam/mm/en/food/in-season/Ramzan/Images/hyderabadi-dum-biryani.jpg" alt="Photo of a Biriyani">
+            <mat-card-content>
+              <p>
+                Biryani is a mixed rice dish originating among the Muslims of the Indian subcontinent.
+                 It is made with Indian spices, rice, and usually 
+                some type of meat or in some cases without any meat, and sometimes, in addition, eggs and potatoes
+              </p>
+            </mat-card-content>
+            <mat-card-actions>
+              <button mat-button>LIKE</button>
+              <button mat-button>SHARE</button>
+            </mat-card-actions>
+          </mat-card>
+    </mat-grid-tile>
+  </mat-grid-list> -->
+
+
+
+  <div class="mt-3">
+    <mat-grid-list cols="3">
+      <ng-container *ngFor="let fooditems of fooditems">        
+        <mat-grid-tile>
+            <mat-card class="example-card">
+                <mat-card-header>
+                  <mat-card-title>{{fooditems.name}}</mat-card-title>
+                </mat-card-header>
+                <img mat-card-image src="{{fooditems.imgToUrl}}" alt="Biriyani">
+                <mat-card-content style="padding-left: 6px;">
+                  <span>
+                    Rating: {{fooditems.rating}} *
+                  </span>
+                  <span class="ml-3">
+                    Price: {{fooditems.price}}
+                  </span>
+                </mat-card-content>
+                <mat-card-actions>
+                  <button mat-button>Add to cart</button>
+                  <button mat-button>Order Now</button>
+                </mat-card-actions>
+            </mat-card>
+        </mat-grid-tile>
+      </ng-container>
+    </mat-grid-list>
+</div>
+

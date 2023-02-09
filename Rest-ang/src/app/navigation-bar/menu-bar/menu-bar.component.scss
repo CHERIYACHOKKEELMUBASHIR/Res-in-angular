@@ -1,0 +1,40 @@
+:host::ng-deep .mat-toolbar {
+    background: #1c649e;
+    color: #ffffff;
+    height: 80px;
+}
+
+.nav-items {
+    margin-left: 12px;
+    font-size: 16px;
+    position: relative;
+    top: 2px;
+}
+.example-spacer{
+    flex: 1 1 auto;
+}
+.m{
+    &l{
+        &-1{
+            margin-left: 4px;
+        }
+        &-2{
+            margin-left: 8px;
+        }
+        &-3{
+            margin-left: 12px;
+        }
+        &-4{
+            margin-left: 16px;
+        }
+        &-5{
+            margin-left: 20px;
+        }
+        &-6{
+            margin-left: 24px;
+        }
+    }
+}
+.cp{
+    cursor: pointer;
+}

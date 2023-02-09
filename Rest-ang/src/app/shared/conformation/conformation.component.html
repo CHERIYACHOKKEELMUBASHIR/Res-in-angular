@@ -1,0 +1,8 @@
+<div style="padding: 12px;">
+    <h1>{{action}} {{value}}</h1>
+    <p>Are you sure want to {{action}} {{value}} ?</p>
+    </div>
+    <div mat-dialog-actions>
+        <button mat-button (click)="onCancel()">Cancel</button>
+        <button mat-button (click)="onConform()" cdkFocusInitial>OK</button>
+    </div>

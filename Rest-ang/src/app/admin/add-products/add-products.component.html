@@ -1,0 +1,27 @@
+<h1 mat-dialog-title>{{isEdit===true? 'Update':'Add'}} Product </h1>
+<div mat-dialog-content>
+  <div>
+    <mat-form-field style="width: 70%;">
+      <mat-label>Name</mat-label>
+      <input matInput [(ngModel)]="name">
+    </mat-form-field>
+  </div>
+  <div>
+    <mat-form-field style="width: 70%;">
+      <mat-label>Price</mat-label>
+      <input matInput [(ngModel)]="price" placeholder="Enter Price in Rs">
+    </mat-form-field>
+  </div>
+  <div>
+    <mat-form-field style="width: 90%;">
+      <mat-label>Description</mat-label>
+      <textarea matInput placeholder="Description" [(ngModel)]="description"></textarea>
+    </mat-form-field>
+  </div>
+</div>
+<div mat-dialog-actions>
+  <button mat-button (click)="onNoClick()">Cancel</button>
+  <button *ngIf="!isEdit" mat-button (click)="onSave()"  cdkFocusInitial>Save</button>
+  <button *ngIf="isEdit" mat-button (click)="onEdit()"  cdkFocusInitial>Update</button>
+
+</div>
